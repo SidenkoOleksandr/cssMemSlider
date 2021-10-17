@@ -48,15 +48,26 @@ h1 {
 }
 
 .wrapper-slider-footer {
-display: flex;
-justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper-tab {
+  display: flex;
+  gap: 5px;
+  padding-top: 25px;
+  margin-bottom: 100px;
 }
 
 img {
   height: 0;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #1e2020;
 }
 
 h2 {
+  padding-top: 25px;
+  margin-bottom: 100px;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-size: 1.25rem;
@@ -71,34 +82,82 @@ input {
 }
 
 label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
+}
+
+label div {
+  width: 15px;
+  height: 15px;
+  border: medium solid #6ea3ca;
+  border-radius: 50%;
+  background-color: #6ea3ca;
+  text-align: center;
+  transition: 0.2s;
+}
+
+label:hover div {
+  border-color: #ffffff;
+  background-color: #ffffff;
+}
+
+label:active div {
+  border-color: #bdbdbd;
+  background-color: #bdbdbd;
 }
 
 #radio-slide1:checked ~ .wrapper-slides-img .slide1 {
   height: 500px;
 }
-
-#radio-slide1:checked ~ .wrapper-slider-footer .wrapper-mems-caption .mems-caption1 {
+#radio-slide1:checked
+  ~ .wrapper-slider-footer
+  .wrapper-mems-caption
+  .mems-caption1 {
   display: block;
+}
+#radio-slide1:checked ~ .wrapper-slider-footer .wrapper-tab .icon-tab1 {
+  background-color: #25282a;
 }
 
 #radio-slide2:checked ~ .wrapper-slides-img .slide2 {
   height: 500px;
 }
-#radio-slide2:checked ~ .wrapper-slider-footer .wrapper-mems-caption .mems-caption2 {
+#radio-slide2:checked
+  ~ .wrapper-slider-footer
+  .wrapper-mems-caption
+  .mems-caption2 {
   display: block;
+}
+#radio-slide2:checked ~ .wrapper-slider-footer .wrapper-tab .icon-tab2 {
+  background-color: #25282a;
 }
 
 #radio-slide3:checked ~ .wrapper-slides-img .slide3 {
   height: 500px;
 }
-#radio-slide3:checked ~ .wrapper-slider-footer .wrapper-mems-caption .mems-caption3 {
+#radio-slide3:checked
+  ~ .wrapper-slider-footer
+  .wrapper-mems-caption
+  .mems-caption3 {
   display: block;
+}
+#radio-slide3:checked ~ .wrapper-slider-footer .wrapper-tab .icon-tab3 {
+  background-color: #25282a;
 }
 
 #radio-slide4:checked ~ .wrapper-slides-img .slide4 {
   height: 500px;
 }
-#radio-slide4:checked ~ .wrapper-slider-footer .wrapper-mems-caption .mems-caption4 {
+#radio-slide4:checked
+  ~ .wrapper-slider-footer
+  .wrapper-mems-caption
+  .mems-caption4 {
   display: block;
+}
+#radio-slide4:checked ~ .wrapper-slider-footer .wrapper-tab .icon-tab4 {
+  background-color: #25282a;
 }
