@@ -45,11 +45,17 @@ h1 {
 .wrapper-slides-img {
   display: flex;
   justify-content: center;
+  height: 500px;
 }
 
 .wrapper-slider-footer {
   display: flex;
   justify-content: space-between;
+}
+
+.wrapper-mems-caption {
+  overflow: hidden;
+  text-align: left;
 }
 
 .wrapper-tab {
@@ -60,21 +66,27 @@ h1 {
 }
 
 img {
-  height: 0;
+  width: 0;
   border-radius: 5px;
   box-shadow: 5px 5px 5px #1e2020;
+  transition: 0.5s;
 }
 
 h2 {
-  padding-top: 25px;
+  display: inline-block;
+  width: 0;
   margin-bottom: 100px;
+  padding-top: 25px;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-size: 1.25rem;
   font-weight: 700;
   text-align: left;
   color: #ffffff;
-  display: none;
+  white-space: nowrap;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.3s;
 }
 
 input {
@@ -111,52 +123,57 @@ label:active div {
 }
 
 #radio-slide1:checked ~ .wrapper-slides-img .slide1 {
-  height: 500px;
+  width: 500px;
 }
 #radio-slide1:checked
   ~ .wrapper-slider-footer
   .wrapper-mems-caption
   .mems-caption1 {
-  display: block;
+  width: 350px;
+  opacity: 1;
 }
+
 #radio-slide1:checked ~ .wrapper-slider-footer .wrapper-tab .icon-tab1 {
   background-color: #25282a;
 }
 
 #radio-slide2:checked ~ .wrapper-slides-img .slide2 {
-  height: 500px;
+  width: 500px;
 }
 #radio-slide2:checked
   ~ .wrapper-slider-footer
   .wrapper-mems-caption
   .mems-caption2 {
-  display: block;
+  width: 350px;
+  opacity: 1;
 }
 #radio-slide2:checked ~ .wrapper-slider-footer .wrapper-tab .icon-tab2 {
   background-color: #25282a;
 }
 
 #radio-slide3:checked ~ .wrapper-slides-img .slide3 {
-  height: 500px;
+  width: 500px;
 }
 #radio-slide3:checked
   ~ .wrapper-slider-footer
   .wrapper-mems-caption
   .mems-caption3 {
-  display: block;
+  width: 350px;
+  opacity: 1;
 }
 #radio-slide3:checked ~ .wrapper-slider-footer .wrapper-tab .icon-tab3 {
   background-color: #25282a;
 }
 
 #radio-slide4:checked ~ .wrapper-slides-img .slide4 {
-  height: 500px;
+  width: 500px;
 }
 #radio-slide4:checked
   ~ .wrapper-slider-footer
   .wrapper-mems-caption
   .mems-caption4 {
-  display: block;
+  width: 350px;
+  opacity: 1;
 }
 #radio-slide4:checked ~ .wrapper-slider-footer .wrapper-tab .icon-tab4 {
   background-color: #25282a;
